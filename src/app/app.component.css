@@ -1,0 +1,23 @@
+* {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "titre titre titre"
+    "user chat chat"
+    "user message message";
+}
+
+app-en-tete{
+  grid-area: titre;
+}
+app-main-zone{
+  grid-area: chat;
+}
+app-list-user{
+  grid-area: user;
+}
+app-chat-zone{
+  grid-area: message;
+}
